@@ -1,6 +1,12 @@
 # kbmaestro-dbschema
 Keyboard Maestro macro library for use with DbSchema.  Allows for rapid creation of DB ERP diagrams.
 
+## Dependencies  
+You must have both of the following tools installed to make use of this project:
+
+[Keyboard Maestro](https://www.keyboardmaestro.com)  
+[DbSchema](https://www.dbschema.com/)  
+
 ## Installation
 Once Keyboard Maestro is installed, simply browse to the library file and double-click it.  The library file is located in...  
 
