@@ -22,11 +22,102 @@
 						<key>MacroActionType</key>
 						<string>ExecuteMacro</string>
 						<key>MacroUID</key>
-						<string>6F46B030-44E1-4F16-A20C-9B471183020E</string>
+						<string>EC631BC2-6234-49B6-A0E3-2AA2A3E33143</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 						<key>UseParameter</key>
 						<false/>
+					</dict>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>38F278B2-F242-432F-8318-8AF37FB373C2</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>5EB2FCC9-ABC7-4B03-86FD-D8FC22125A02</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>528260262.53184402</real>
+				<key>ModificationDate</key>
+				<real>528260380.59578598</real>
+				<key>Name</key>
+				<string>_audit</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>_audit </string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>F86B71CB-A19D-47A5-ABF4-7F9A4FD535AF</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>DbSchema Tables</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.install4j.0607-8447-0273-3287.30</string>
+					<key>Name</key>
+					<string>DbSchema</string>
+					<key>NewFile</key>
+					<string>/Applications/DbSchema/DbSchema.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5AF5947C-FF2A-4872-9F8D-67D6DDF0F6B0</string>
+		<key>UID</key>
+		<string>0CEFB46C-3442-4E2C-9F1F-56883F0C9416</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>528166063.90492398</real>
+		<key>FocussedWindowConditionType</key>
+		<string>TitleContains</string>
+		<key>FocussedWindowTitle</key>
+		<string>Table</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>_d</string>
+						<key>Variable</key>
+						<string>FIELD_NAME</string>
 					</dict>
 					<dict>
 						<key>Asynchronously</key>
@@ -44,7 +135,7 @@
 						<key>MacroActionType</key>
 						<string>SetVariableToText</string>
 						<key>Text</key>
-						<string>boolean</string>
+						<string>datetime</string>
 						<key>Variable</key>
 						<string>FIELD_TYPE</string>
 					</dict>
@@ -62,11 +153,11 @@
 					</dict>
 				</array>
 				<key>CreationDate</key>
-				<real>528173029.37319797</real>
+				<real>528260045.53307599</real>
 				<key>ModificationDate</key>
-				<real>528173041.55137801</real>
+				<real>528260108.70692301</real>
 				<key>Name</key>
-				<string>@ b</string>
+				<string>_d (audit delete flag)</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -75,11 +166,217 @@
 						<key>SimulateDeletes</key>
 						<true/>
 						<key>TypedString</key>
-						<string>b </string>
+						<string>_d </string>
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>0184770D-4C50-4B0B-8AE9-AF092CB64B51</string>
+				<string>5EB2FCC9-ABC7-4B03-86FD-D8FC22125A02</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>DbSchema Tables</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.install4j.0607-8447-0273-3287.30</string>
+					<key>Name</key>
+					<string>DbSchema</string>
+					<key>NewFile</key>
+					<string>/Applications/DbSchema/DbSchema.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5AF5947C-FF2A-4872-9F8D-67D6DDF0F6B0</string>
+		<key>UID</key>
+		<string>0CEFB46C-3442-4E2C-9F1F-56883F0C9416</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>528166063.90492398</real>
+		<key>FocussedWindowConditionType</key>
+		<string>TitleContains</string>
+		<key>FocussedWindowTitle</key>
+		<string>Table</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>_m</string>
+						<key>Variable</key>
+						<string>FIELD_NAME</string>
+					</dict>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>E3F6ED71-775E-46B6-9FED-2CCBDBF037B7</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>char</string>
+						<key>Variable</key>
+						<string>FIELD_TYPE</string>
+					</dict>
+					<dict>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>32</string>
+						<key>Variable</key>
+						<string>FIELD_LENGTH</string>
+					</dict>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>83F66499-7199-4D29-B2F0-7D9D860CF0AD</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>528260201.14488399</real>
+				<key>ModificationDate</key>
+				<real>528260233.06901199</real>
+				<key>Name</key>
+				<string>_m (audit member id)</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>_m </string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>38F278B2-F242-432F-8318-8AF37FB373C2</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>DbSchema Tables</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.install4j.0607-8447-0273-3287.30</string>
+					<key>Name</key>
+					<string>DbSchema</string>
+					<key>NewFile</key>
+					<string>/Applications/DbSchema/DbSchema.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5AF5947C-FF2A-4872-9F8D-67D6DDF0F6B0</string>
+		<key>UID</key>
+		<string>0CEFB46C-3442-4E2C-9F1F-56883F0C9416</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>528166063.90492398</real>
+		<key>FocussedWindowConditionType</key>
+		<string>TitleContains</string>
+		<key>FocussedWindowTitle</key>
+		<string>Table</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>_v</string>
+						<key>Variable</key>
+						<string>FIELD_NAME</string>
+					</dict>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>E3F6ED71-775E-46B6-9FED-2CCBDBF037B7</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>datetime</string>
+						<key>Variable</key>
+						<string>FIELD_TYPE</string>
+					</dict>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>24B6475A-A8FA-439E-8F0E-150648051FEC</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>528260127.67379701</real>
+				<key>ModificationDate</key>
+				<real>528260355.60629803</real>
+				<key>Name</key>
+				<string>_v (audit version date)</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>_v </string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>EC631BC2-6234-49B6-A0E3-2AA2A3E33143</string>
 			</dict>
 		</array>
 		<key>Name</key>
@@ -167,9 +464,9 @@
 				<key>CreationDate</key>
 				<real>528173008.527592</real>
 				<key>ModificationDate</key>
-				<real>528173022.39864898</real>
+				<real>528239788.92388701</real>
 				<key>Name</key>
-				<string>@ bm</string>
+				<string>@ b</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -178,11 +475,114 @@
 						<key>SimulateDeletes</key>
 						<true/>
 						<key>TypedString</key>
-						<string>bm </string>
+						<string>b </string>
 					</dict>
 				</array>
 				<key>UID</key>
 				<string>B033DD0C-E168-4517-886C-DA5B80E6D27B</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>DbSchema Tables</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.install4j.0607-8447-0273-3287.30</string>
+					<key>Name</key>
+					<string>DbSchema</string>
+					<key>NewFile</key>
+					<string>/Applications/DbSchema/DbSchema.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5AF5947C-FF2A-4872-9F8D-67D6DDF0F6B0</string>
+		<key>UID</key>
+		<string>0CEFB46C-3442-4E2C-9F1F-56883F0C9416</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>528166063.90492398</real>
+		<key>FocussedWindowConditionType</key>
+		<string>TitleContains</string>
+		<key>FocussedWindowTitle</key>
+		<string>Table</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>6F46B030-44E1-4F16-A20C-9B471183020E</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>E3F6ED71-775E-46B6-9FED-2CCBDBF037B7</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>boolean</string>
+						<key>Variable</key>
+						<string>FIELD_TYPE</string>
+					</dict>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>165DEA57-165E-47F1-AD21-710D1458D10B</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>528173029.37319797</real>
+				<key>ModificationDate</key>
+				<real>528239782.49550098</real>
+				<key>Name</key>
+				<string>@ bn</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>bn </string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>0184770D-4C50-4B0B-8AE9-AF092CB64B51</string>
 			</dict>
 		</array>
 		<key>Name</key>
@@ -2484,7 +2884,7 @@
 						<key>MacroActionType</key>
 						<string>ExecuteMacro</string>
 						<key>MacroUID</key>
-						<string>165DEA57-165E-47F1-AD21-710D1458D10B</string>
+						<string>24B6475A-A8FA-439E-8F0E-150648051FEC</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 						<key>UseParameter</key>
@@ -2492,9 +2892,9 @@
 					</dict>
 				</array>
 				<key>CreationDate</key>
-				<real>528172975.95416498</real>
+				<real>528172920.53941298</real>
 				<key>ModificationDate</key>
-				<real>528173003.35154998</real>
+				<real>528239804.73903</real>
 				<key>Name</key>
 				<string>@ d</string>
 				<key>Triggers</key>
@@ -2509,7 +2909,7 @@
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>4EBF843B-91EB-448A-805A-CC805070C2CA</string>
+				<string>E1A8F744-E7A3-4012-9363-8123231B2ACC</string>
 			</dict>
 		</array>
 		<key>Name</key>
@@ -2587,7 +2987,7 @@
 						<key>MacroActionType</key>
 						<string>ExecuteMacro</string>
 						<key>MacroUID</key>
-						<string>24B6475A-A8FA-439E-8F0E-150648051FEC</string>
+						<string>165DEA57-165E-47F1-AD21-710D1458D10B</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 						<key>UseParameter</key>
@@ -2595,11 +2995,11 @@
 					</dict>
 				</array>
 				<key>CreationDate</key>
-				<real>528172920.53941298</real>
+				<real>528172975.95416498</real>
 				<key>ModificationDate</key>
-				<real>528172952.38473898</real>
+				<real>528239797.06490302</real>
 				<key>Name</key>
-				<string>@ dm</string>
+				<string>@ dn</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -2608,11 +3008,11 @@
 						<key>SimulateDeletes</key>
 						<true/>
 						<key>TypedString</key>
-						<string>dm </string>
+						<string>dn </string>
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>E1A8F744-E7A3-4012-9363-8123231B2ACC</string>
+				<string>4EBF843B-91EB-448A-805A-CC805070C2CA</string>
 			</dict>
 		</array>
 		<key>Name</key>
@@ -2690,7 +3090,7 @@
 						<key>MacroActionType</key>
 						<string>ExecuteMacro</string>
 						<key>MacroUID</key>
-						<string>165DEA57-165E-47F1-AD21-710D1458D10B</string>
+						<string>24B6475A-A8FA-439E-8F0E-150648051FEC</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 						<key>UseParameter</key>
@@ -2698,9 +3098,9 @@
 					</dict>
 				</array>
 				<key>CreationDate</key>
-				<real>528173101.45800197</real>
+				<real>528173114.500539</real>
 				<key>ModificationDate</key>
-				<real>528173110.38117599</real>
+				<real>528239838.46573198</real>
 				<key>Name</key>
 				<string>@ f</string>
 				<key>Triggers</key>
@@ -2715,7 +3115,7 @@
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>2967E9D9-7FA8-4D14-A5B5-B82FA9C43FB9</string>
+				<string>0DEEECEE-8179-453B-A03B-3DE999BF6950</string>
 			</dict>
 		</array>
 		<key>Name</key>
@@ -3096,7 +3496,7 @@
 						<key>MacroActionType</key>
 						<string>ExecuteMacro</string>
 						<key>MacroUID</key>
-						<string>24B6475A-A8FA-439E-8F0E-150648051FEC</string>
+						<string>165DEA57-165E-47F1-AD21-710D1458D10B</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 						<key>UseParameter</key>
@@ -3104,11 +3504,11 @@
 					</dict>
 				</array>
 				<key>CreationDate</key>
-				<real>528173114.500539</real>
+				<real>528173101.45800197</real>
 				<key>ModificationDate</key>
-				<real>528173124.08799303</real>
+				<real>528239830.15319997</real>
 				<key>Name</key>
-				<string>@ fm</string>
+				<string>@ fn</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -3117,11 +3517,11 @@
 						<key>SimulateDeletes</key>
 						<true/>
 						<key>TypedString</key>
-						<string>fm </string>
+						<string>fn </string>
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>0DEEECEE-8179-453B-A03B-3DE999BF6950</string>
+				<string>2967E9D9-7FA8-4D14-A5B5-B82FA9C43FB9</string>
 			</dict>
 		</array>
 		<key>Name</key>
@@ -3199,7 +3599,7 @@
 						<key>MacroActionType</key>
 						<string>ExecuteMacro</string>
 						<key>MacroUID</key>
-						<string>165DEA57-165E-47F1-AD21-710D1458D10B</string>
+						<string>24B6475A-A8FA-439E-8F0E-150648051FEC</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 						<key>UseParameter</key>
@@ -3207,9 +3607,9 @@
 					</dict>
 				</array>
 				<key>CreationDate</key>
-				<real>528173296.55514902</real>
+				<real>528173276.25830197</real>
 				<key>ModificationDate</key>
-				<real>528173308.86702901</real>
+				<real>528239867.70245397</real>
 				<key>Name</key>
 				<string>@ i</string>
 				<key>Triggers</key>
@@ -3224,7 +3624,7 @@
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>EC2BF9E4-FA0A-4772-B2EA-F8064987296B</string>
+				<string>3352C8CF-F15D-4F37-B20E-F6A0D3D0597D</string>
 			</dict>
 		</array>
 		<key>Name</key>
@@ -4024,7 +4424,7 @@
 						<key>MacroActionType</key>
 						<string>ExecuteMacro</string>
 						<key>MacroUID</key>
-						<string>24B6475A-A8FA-439E-8F0E-150648051FEC</string>
+						<string>165DEA57-165E-47F1-AD21-710D1458D10B</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 						<key>UseParameter</key>
@@ -4032,11 +4432,11 @@
 					</dict>
 				</array>
 				<key>CreationDate</key>
-				<real>528173276.25830197</real>
+				<real>528173296.55514902</real>
 				<key>ModificationDate</key>
-				<real>528173286.79750597</real>
+				<real>528239859.83547097</real>
 				<key>Name</key>
-				<string>@ im</string>
+				<string>@ in</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -4045,122 +4445,11 @@
 						<key>SimulateDeletes</key>
 						<true/>
 						<key>TypedString</key>
-						<string>im </string>
+						<string>in </string>
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>3352C8CF-F15D-4F37-B20E-F6A0D3D0597D</string>
-			</dict>
-		</array>
-		<key>Name</key>
-		<string>DbSchema Tables</string>
-		<key>Targeting</key>
-		<dict>
-			<key>Targeting</key>
-			<string>Included</string>
-			<key>TargetingApps</key>
-			<array>
-				<dict>
-					<key>BundleIdentifier</key>
-					<string>com.install4j.0607-8447-0273-3287.30</string>
-					<key>Name</key>
-					<string>DbSchema</string>
-					<key>NewFile</key>
-					<string>/Applications/DbSchema/DbSchema.app</string>
-				</dict>
-			</array>
-		</dict>
-		<key>ToggleMacroUID</key>
-		<string>5AF5947C-FF2A-4872-9F8D-67D6DDF0F6B0</string>
-		<key>UID</key>
-		<string>0CEFB46C-3442-4E2C-9F1F-56883F0C9416</string>
-	</dict>
-	<dict>
-		<key>Activate</key>
-		<string>Normal</string>
-		<key>CreationDate</key>
-		<real>528166063.90492398</real>
-		<key>FocussedWindowConditionType</key>
-		<string>TitleContains</string>
-		<key>FocussedWindowTitle</key>
-		<string>Table</string>
-		<key>Macros</key>
-		<array>
-			<dict>
-				<key>Actions</key>
-				<array>
-					<dict>
-						<key>Asynchronously</key>
-						<false/>
-						<key>MacroActionType</key>
-						<string>ExecuteMacro</string>
-						<key>MacroUID</key>
-						<string>6F46B030-44E1-4F16-A20C-9B471183020E</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-						<key>UseParameter</key>
-						<false/>
-					</dict>
-					<dict>
-						<key>Asynchronously</key>
-						<false/>
-						<key>MacroActionType</key>
-						<string>ExecuteMacro</string>
-						<key>MacroUID</key>
-						<string>E3F6ED71-775E-46B6-9FED-2CCBDBF037B7</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-						<key>UseParameter</key>
-						<false/>
-					</dict>
-					<dict>
-						<key>MacroActionType</key>
-						<string>SetVariableToText</string>
-						<key>Text</key>
-						<string>char</string>
-						<key>Variable</key>
-						<string>FIELD_TYPE</string>
-					</dict>
-					<dict>
-						<key>MacroActionType</key>
-						<string>SetVariableToText</string>
-						<key>Text</key>
-						<string>1</string>
-						<key>Variable</key>
-						<string>FIELD_LENGTH</string>
-					</dict>
-					<dict>
-						<key>Asynchronously</key>
-						<false/>
-						<key>MacroActionType</key>
-						<string>ExecuteMacro</string>
-						<key>MacroUID</key>
-						<string>9EA53495-8461-424E-88CC-CAA15B6A97DC</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-						<key>UseParameter</key>
-						<false/>
-					</dict>
-				</array>
-				<key>CreationDate</key>
-				<real>528172326.34751898</real>
-				<key>ModificationDate</key>
-				<real>528172443.116229</real>
-				<key>Name</key>
-				<string>@ pid1</string>
-				<key>Triggers</key>
-				<array>
-					<dict>
-						<key>MacroTriggerType</key>
-						<string>TypedString</string>
-						<key>SimulateDeletes</key>
-						<true/>
-						<key>TypedString</key>
-						<string>pid1 </string>
-					</dict>
-				</array>
-				<key>UID</key>
-				<string>E673D2CC-9B54-4EEC-AE46-5882A8E9A6BF</string>
+				<string>EC2BF9E4-FA0A-4772-B2EA-F8064987296B</string>
 			</dict>
 		</array>
 		<key>Name</key>
@@ -4256,9 +4545,9 @@
 				<key>CreationDate</key>
 				<real>528172306.77167797</real>
 				<key>ModificationDate</key>
-				<real>528172449.66170299</real>
+				<real>528239891.53633302</real>
 				<key>Name</key>
-				<string>@ pid1m</string>
+				<string>@ pid1</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -4267,7 +4556,7 @@
 						<key>SimulateDeletes</key>
 						<true/>
 						<key>TypedString</key>
-						<string>pid1m </string>
+						<string>pid1 </string>
 					</dict>
 				</array>
 				<key>UID</key>
@@ -4347,7 +4636,7 @@
 						<key>MacroActionType</key>
 						<string>SetVariableToText</string>
 						<key>Text</key>
-						<string>2</string>
+						<string>1</string>
 						<key>Variable</key>
 						<string>FIELD_LENGTH</string>
 					</dict>
@@ -4365,11 +4654,11 @@
 					</dict>
 				</array>
 				<key>CreationDate</key>
-				<real>528172389.324561</real>
+				<real>528172326.34751898</real>
 				<key>ModificationDate</key>
-				<real>528172438.68244499</real>
+				<real>528239883.788158</real>
 				<key>Name</key>
-				<string>@ pid2</string>
+				<string>@ pid1n</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -4378,11 +4667,11 @@
 						<key>SimulateDeletes</key>
 						<true/>
 						<key>TypedString</key>
-						<string>pid2 </string>
+						<string>pid1n </string>
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>8B50957E-6B5C-4C4B-94AF-283942B92995</string>
+				<string>E673D2CC-9B54-4EEC-AE46-5882A8E9A6BF</string>
 			</dict>
 		</array>
 		<key>Name</key>
@@ -4478,9 +4767,9 @@
 				<key>CreationDate</key>
 				<real>528172289.860434</real>
 				<key>ModificationDate</key>
-				<real>528172456.62169898</real>
+				<real>528239906.43922001</real>
 				<key>Name</key>
-				<string>@ pid2m</string>
+				<string>@ pid2</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -4489,7 +4778,7 @@
 						<key>SimulateDeletes</key>
 						<true/>
 						<key>TypedString</key>
-						<string>pid2m </string>
+						<string>pid2 </string>
 					</dict>
 				</array>
 				<key>UID</key>
@@ -4569,7 +4858,7 @@
 						<key>MacroActionType</key>
 						<string>SetVariableToText</string>
 						<key>Text</key>
-						<string>3</string>
+						<string>2</string>
 						<key>Variable</key>
 						<string>FIELD_LENGTH</string>
 					</dict>
@@ -4587,11 +4876,11 @@
 					</dict>
 				</array>
 				<key>CreationDate</key>
-				<real>528172416.06777102</real>
+				<real>528172389.324561</real>
 				<key>ModificationDate</key>
-				<real>528172431.47210503</real>
+				<real>528239899.106704</real>
 				<key>Name</key>
-				<string>@ pid3</string>
+				<string>@ pid2n</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -4600,11 +4889,11 @@
 						<key>SimulateDeletes</key>
 						<true/>
 						<key>TypedString</key>
-						<string>pid3 </string>
+						<string>pid2n </string>
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>C8DE46B6-0575-4097-AF35-B305EC49CEB9</string>
+				<string>8B50957E-6B5C-4C4B-94AF-283942B92995</string>
 			</dict>
 		</array>
 		<key>Name</key>
@@ -4700,9 +4989,9 @@
 				<key>CreationDate</key>
 				<real>528172262.96690899</real>
 				<key>ModificationDate</key>
-				<real>528172283.57631201</real>
+				<real>528239923.62179601</real>
 				<key>Name</key>
-				<string>@ pid3m</string>
+				<string>@ pid3</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -4711,7 +5000,7 @@
 						<key>SimulateDeletes</key>
 						<true/>
 						<key>TypedString</key>
-						<string>pid3m </string>
+						<string>pid3 </string>
 					</dict>
 				</array>
 				<key>UID</key>
@@ -4791,7 +5080,7 @@
 						<key>MacroActionType</key>
 						<string>SetVariableToText</string>
 						<key>Text</key>
-						<string>32</string>
+						<string>3</string>
 						<key>Variable</key>
 						<string>FIELD_LENGTH</string>
 					</dict>
@@ -4809,11 +5098,11 @@
 					</dict>
 				</array>
 				<key>CreationDate</key>
-				<real>528172467.20126402</real>
+				<real>528172416.06777102</real>
 				<key>ModificationDate</key>
-				<real>528172488.59609997</real>
+				<real>528239916.36132902</real>
 				<key>Name</key>
-				<string>@ pid32</string>
+				<string>@ pid3n</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -4822,11 +5111,11 @@
 						<key>SimulateDeletes</key>
 						<true/>
 						<key>TypedString</key>
-						<string>pid32 </string>
+						<string>pid3n </string>
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>13C7F552-5B6C-455A-B6B6-B3298EDE5477</string>
+				<string>C8DE46B6-0575-4097-AF35-B305EC49CEB9</string>
 			</dict>
 		</array>
 		<key>Name</key>
@@ -4922,9 +5211,9 @@
 				<key>CreationDate</key>
 				<real>528171698.62202102</real>
 				<key>ModificationDate</key>
-				<real>528171871.73192298</real>
+				<real>528239940.36759597</real>
 				<key>Name</key>
-				<string>@ pid32m</string>
+				<string>@ pid32</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -4933,11 +5222,122 @@
 						<key>SimulateDeletes</key>
 						<true/>
 						<key>TypedString</key>
-						<string>pid32m </string>
+						<string>pid32 </string>
 					</dict>
 				</array>
 				<key>UID</key>
 				<string>22765877-BE9E-43FA-A184-5F80F8362305</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>DbSchema Tables</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.install4j.0607-8447-0273-3287.30</string>
+					<key>Name</key>
+					<string>DbSchema</string>
+					<key>NewFile</key>
+					<string>/Applications/DbSchema/DbSchema.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5AF5947C-FF2A-4872-9F8D-67D6DDF0F6B0</string>
+		<key>UID</key>
+		<string>0CEFB46C-3442-4E2C-9F1F-56883F0C9416</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>528166063.90492398</real>
+		<key>FocussedWindowConditionType</key>
+		<string>TitleContains</string>
+		<key>FocussedWindowTitle</key>
+		<string>Table</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>6F46B030-44E1-4F16-A20C-9B471183020E</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>E3F6ED71-775E-46B6-9FED-2CCBDBF037B7</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>char</string>
+						<key>Variable</key>
+						<string>FIELD_TYPE</string>
+					</dict>
+					<dict>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>32</string>
+						<key>Variable</key>
+						<string>FIELD_LENGTH</string>
+					</dict>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>9EA53495-8461-424E-88CC-CAA15B6A97DC</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>528172467.20126402</real>
+				<key>ModificationDate</key>
+				<real>528239931.95589501</real>
+				<key>Name</key>
+				<string>@ pid32n</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>pid32n </string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>13C7F552-5B6C-455A-B6B6-B3298EDE5477</string>
 			</dict>
 		</array>
 		<key>Name</key>
@@ -7585,6 +7985,42 @@
 						<key>MacroActionType</key>
 						<string>ExecuteMacro</string>
 						<key>MacroUID</key>
+						<string>941D7001-5B42-4110-B4ED-D7A7B357A088</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>ByTyping</string>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+						<key>Text</key>
+						<string>%Variable%VarName%%FIELD_LENGTH%</string>
+					</dict>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>CE61B529-C529-471F-879F-EE19B82D19E5</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
 						<string>874C2F84-5FEA-4445-B416-B2CEE88DF657</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
@@ -7605,15 +8041,15 @@
 					</dict>
 				</array>
 				<key>CreationDate</key>
-				<real>528170543.871261</real>
+				<real>528169770.21394098</real>
 				<key>ModificationDate</key>
-				<real>528171048.18767899</real>
+				<real>528235555.18256599</real>
 				<key>Name</key>
-				<string>= CREATE COLUMN %TYPE%</string>
+				<string>= CREATE COLUMN %TYPE% %LENGTH% NOT NULL</string>
 				<key>Triggers</key>
 				<array/>
 				<key>UID</key>
-				<string>165DEA57-165E-47F1-AD21-710D1458D10B</string>
+				<string>83F66499-7199-4D29-B2F0-7D9D860CF0AD</string>
 			</dict>
 		</array>
 		<key>Name</key>
@@ -7777,195 +8213,13 @@
 				<key>CreationDate</key>
 				<real>528172352.385203</real>
 				<key>ModificationDate</key>
-				<real>528172363.65559697</real>
+				<real>528239710.87777102</real>
 				<key>Name</key>
-				<string>= CREATE COLUMN %TYPE% %LENGTH%</string>
+				<string>= CREATE COLUMN %TYPE% %LENGTH% NULL</string>
 				<key>Triggers</key>
 				<array/>
 				<key>UID</key>
 				<string>9EA53495-8461-424E-88CC-CAA15B6A97DC</string>
-			</dict>
-		</array>
-		<key>Name</key>
-		<string>DbSchema Tables</string>
-		<key>Targeting</key>
-		<dict>
-			<key>Targeting</key>
-			<string>Included</string>
-			<key>TargetingApps</key>
-			<array>
-				<dict>
-					<key>BundleIdentifier</key>
-					<string>com.install4j.0607-8447-0273-3287.30</string>
-					<key>Name</key>
-					<string>DbSchema</string>
-					<key>NewFile</key>
-					<string>/Applications/DbSchema/DbSchema.app</string>
-				</dict>
-			</array>
-		</dict>
-		<key>ToggleMacroUID</key>
-		<string>5AF5947C-FF2A-4872-9F8D-67D6DDF0F6B0</string>
-		<key>UID</key>
-		<string>0CEFB46C-3442-4E2C-9F1F-56883F0C9416</string>
-	</dict>
-	<dict>
-		<key>Activate</key>
-		<string>Normal</string>
-		<key>CreationDate</key>
-		<real>528166063.90492398</real>
-		<key>FocussedWindowConditionType</key>
-		<string>TitleContains</string>
-		<key>FocussedWindowTitle</key>
-		<string>Table</string>
-		<key>Macros</key>
-		<array>
-			<dict>
-				<key>Actions</key>
-				<array>
-					<dict>
-						<key>Asynchronously</key>
-						<false/>
-						<key>MacroActionType</key>
-						<string>ExecuteMacro</string>
-						<key>MacroUID</key>
-						<string>27FF581E-6928-4812-BFDD-2D3F444C7056</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-						<key>UseParameter</key>
-						<false/>
-					</dict>
-					<dict>
-						<key>Asynchronously</key>
-						<false/>
-						<key>MacroActionType</key>
-						<string>ExecuteMacro</string>
-						<key>MacroUID</key>
-						<string>0DCC2599-0012-42D8-A6B8-AFE32EFA660E</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-						<key>UseParameter</key>
-						<false/>
-					</dict>
-					<dict>
-						<key>Asynchronously</key>
-						<false/>
-						<key>MacroActionType</key>
-						<string>ExecuteMacro</string>
-						<key>MacroUID</key>
-						<string>E9CA87A0-48FC-4FC3-84F8-52380FD751C8</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-						<key>UseParameter</key>
-						<false/>
-					</dict>
-					<dict>
-						<key>Action</key>
-						<string>ByTyping</string>
-						<key>MacroActionType</key>
-						<string>InsertText</string>
-						<key>TargetApplication</key>
-						<dict/>
-						<key>TargetingType</key>
-						<string>Front</string>
-						<key>Text</key>
-						<string>%Variable%FIELD_NAME%</string>
-					</dict>
-					<dict>
-						<key>Asynchronously</key>
-						<false/>
-						<key>MacroActionType</key>
-						<string>ExecuteMacro</string>
-						<key>MacroUID</key>
-						<string>AC10E8DB-CBDA-4B72-888A-B307F6854253</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-						<key>UseParameter</key>
-						<false/>
-					</dict>
-					<dict>
-						<key>Action</key>
-						<string>ByTyping</string>
-						<key>MacroActionType</key>
-						<string>InsertText</string>
-						<key>TargetApplication</key>
-						<dict/>
-						<key>TargetingType</key>
-						<string>Front</string>
-						<key>Text</key>
-						<string>%Variable%VarName%%FIELD_TYPE%</string>
-					</dict>
-					<dict>
-						<key>Asynchronously</key>
-						<false/>
-						<key>MacroActionType</key>
-						<string>ExecuteMacro</string>
-						<key>MacroUID</key>
-						<string>941D7001-5B42-4110-B4ED-D7A7B357A088</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-						<key>UseParameter</key>
-						<false/>
-					</dict>
-					<dict>
-						<key>Action</key>
-						<string>ByTyping</string>
-						<key>MacroActionType</key>
-						<string>InsertText</string>
-						<key>TargetApplication</key>
-						<dict/>
-						<key>TargetingType</key>
-						<string>Front</string>
-						<key>Text</key>
-						<string>%Variable%VarName%%FIELD_LENGTH%</string>
-					</dict>
-					<dict>
-						<key>Asynchronously</key>
-						<false/>
-						<key>MacroActionType</key>
-						<string>ExecuteMacro</string>
-						<key>MacroUID</key>
-						<string>CE61B529-C529-471F-879F-EE19B82D19E5</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-						<key>UseParameter</key>
-						<false/>
-					</dict>
-					<dict>
-						<key>Asynchronously</key>
-						<false/>
-						<key>MacroActionType</key>
-						<string>ExecuteMacro</string>
-						<key>MacroUID</key>
-						<string>874C2F84-5FEA-4445-B416-B2CEE88DF657</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-						<key>UseParameter</key>
-						<false/>
-					</dict>
-					<dict>
-						<key>Asynchronously</key>
-						<false/>
-						<key>MacroActionType</key>
-						<string>ExecuteMacro</string>
-						<key>MacroUID</key>
-						<string>B03EB93F-4DE5-4C9E-9F36-EE072F88C323</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-						<key>UseParameter</key>
-						<false/>
-					</dict>
-				</array>
-				<key>CreationDate</key>
-				<real>528169770.21394098</real>
-				<key>ModificationDate</key>
-				<real>528235555.18256599</real>
-				<key>Name</key>
-				<string>= CREATE COLUMN %TYPE% %LENGTH% NOT NULL</string>
-				<key>Triggers</key>
-				<array/>
-				<key>UID</key>
-				<string>83F66499-7199-4D29-B2F0-7D9D860CF0AD</string>
 			</dict>
 		</array>
 		<key>Name</key>
@@ -8306,6 +8560,152 @@
 				<array/>
 				<key>UID</key>
 				<string>24B6475A-A8FA-439E-8F0E-150648051FEC</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>DbSchema Tables</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.install4j.0607-8447-0273-3287.30</string>
+					<key>Name</key>
+					<string>DbSchema</string>
+					<key>NewFile</key>
+					<string>/Applications/DbSchema/DbSchema.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5AF5947C-FF2A-4872-9F8D-67D6DDF0F6B0</string>
+		<key>UID</key>
+		<string>0CEFB46C-3442-4E2C-9F1F-56883F0C9416</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>528166063.90492398</real>
+		<key>FocussedWindowConditionType</key>
+		<string>TitleContains</string>
+		<key>FocussedWindowTitle</key>
+		<string>Table</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>27FF581E-6928-4812-BFDD-2D3F444C7056</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>0DCC2599-0012-42D8-A6B8-AFE32EFA660E</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>E9CA87A0-48FC-4FC3-84F8-52380FD751C8</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>ByTyping</string>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+						<key>Text</key>
+						<string>%Variable%FIELD_NAME%</string>
+					</dict>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>AC10E8DB-CBDA-4B72-888A-B307F6854253</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>ByTyping</string>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+						<key>Text</key>
+						<string>%Variable%VarName%%FIELD_TYPE%</string>
+					</dict>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>874C2F84-5FEA-4445-B416-B2CEE88DF657</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>B03EB93F-4DE5-4C9E-9F36-EE072F88C323</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>528170543.871261</real>
+				<key>ModificationDate</key>
+				<real>528239699.71554101</real>
+				<key>Name</key>
+				<string>= CREATE COLUMN %TYPE% NULL</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>165DEA57-165E-47F1-AD21-710D1458D10B</string>
 			</dict>
 		</array>
 		<key>Name</key>

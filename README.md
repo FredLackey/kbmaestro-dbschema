@@ -55,6 +55,13 @@ Perform multi-step actions.
 * `idx` : Create single or multi-column index on current table.  Prompts for field name(s).
 * `uidx` : Create single or multi-column **unique** index on current table.  Prompts for field name(s).
 
+### Audit Trail
+
+* `_d` : Create `datetime null` field as delete flag.
+* `_m` : Create `char(32) not null` field as member id.
+* `_v` : Create `datetime not null` field as version date.
+* `_audit` : Triggers all three audit trail macros for convenience.
+
 ## Important Requirement
 **Your DbSchema diagram must be set to MySql as the target database.**  This was chosen to standardize on a single "starting point" for all diagrams.  However, **you may change database platforms once your diagram is complete**.
 
