@@ -4,7 +4,7 @@ Keyboard Maestro macro library for use with DbSchema.  Allows for rapid creation
 ## Installation
 Once Keyboard Maestro is installed, simply browse to the library file and double-click it.  The library file is located in...  
 
-    [./files/DbSchema Tables.kmlibrary](https://raw.githubusercontent.com/FredLackey/kbmaestro-dbschema/master/files/DbSchema%20Tables.kmlibrary)
+[./files/DbSchema Tables.kmlibrary](https://raw.githubusercontent.com/FredLackey/kbmaestro-dbschema/master/files/DbSchema%20Tables.kmlibrary)
 
 ## Usage
 This library allows for rapidly creating new tables, indexes, and foreign keys within a single DbSchema layout.  Currently, there are **over 100 commands** for rapidly creating columns, indexes, and foreign keys in your tables:  
