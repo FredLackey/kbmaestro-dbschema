@@ -20,7 +20,7 @@ Each command is split up in 1-3 parts.  For example, to create a field with a sp
 
 `<DATA TYPE ABBREVIATION><LENGTH><NULLABLE FLAG><SPACE>`
 
-So, to create a `varchar(255)` you would type either `vc255` or `vc255n` (for nullable)
+So, to create a `varchar(255)` column, you would type either `vc255` or `vc255n` (for nullable)
 
 ***Remember, a single space must follow your command to show it is complete.***
 
@@ -45,15 +45,15 @@ You will be prompted for a field name:
 ### Function Commands
 Perform multi-step actions.  
 
-* `fk` : Create foreign key on child.  Prompts for primary table name and child field name.
+* `fk` : Create foreign key on current table.  Prompts for local field name and primary table name.
 * `idx` : Create single or multi-column index on current table.  Prompts for field name(s).
 * `uidx` : Create single or multi-column **unique** index on current table.  Prompts for field name(s).
 
 ## Important Requirement
 **Your DbSchema diagram must be set to MySql as the target database.**  This was chosen to standardize on a single "starting point" for all diagrams.  However, **you may change database platforms once your diagram is complete**.
 
-#### Why MySql  
-DbSchema allows for easily switching from one database to another.  For example, if your project is designed in Database X (SQL Server, for example), you may easily switch it to Database Y (Postgres, MySql, MariaDb, etc.) by simply clicking your mouse.  DbSchema gracefully translates all of the datatypes, fields, and other assets.
+#### Why MySql?  
+DbSchema allows for easily switching from one database to another.  For example, if your project is designed in Database X (SQL Server, for example), you may easily switch it to Database Y (Postgres, MySql, MariaDb, etc.) by simply clicking your mouse.  DbSchema gracefully translates all of the datatypes, fields, and other assets.  MySql was chosen since it is widely used on all major operating systems.
 
 -----
 
