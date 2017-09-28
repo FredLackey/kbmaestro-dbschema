@@ -42,11 +42,11 @@ You will be prompted for a field name unless otherwise specified:
 You will be prompted for a field name:  
 
 * `b` or `bn` : `boolean`
-* `cNNN` or `cNNNn` : `char(NNN)` (valid lengths: 1, 2, 3, 5, 10, 20, 30, 50, 100, 200)
+* `cNNN` or `cNNNn` : `char(NNN)` (valid lengths: 1, 2, 3, 5, 10, 20, 30, 50, 100, 255)
 * `d` or `dn` : `datetime`
 * `f` or `fn` : `float`
 * `i` or `in` : `integer`
-* `vcNNN` or `vcNNNn` : `varchar(NNN)` (valid lengths: 1, 2, 3, 5, 10, 20, 30, 50, 100, 200)
+* `vcNNN` or `vcNNNn` : `varchar(NNN)` (valid lengths: 1, 2, 3, 5, 10, 20, 30, 50, 100, 255)
 
 ### Function Commands
 Perform multi-step actions.  
@@ -61,6 +61,13 @@ Perform multi-step actions.
 * `_m` : Create `char(32) not null` field as member id.
 * `_v` : Create `datetime not null` field as version date.
 * `_audit` : Triggers all three audit trail macros for convenience.
+
+### Convenience
+
+* `desc` : `varchar(255) NULL` named `description`
+* `ename` : `varchar(50) NOT NULL` named `enum_name`
+* `name` : `varchar(50) NOT NULL` named `name`
+* `tid` : `char(2) NOT NULL` named `type_id`
 
 ## Important Requirement
 **Your DbSchema diagram must be set to MySql as the target database.**  This was chosen to standardize on a single "starting point" for all diagrams.  However, **you may change database platforms once your diagram is complete**.
