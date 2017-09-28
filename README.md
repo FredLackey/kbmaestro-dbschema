@@ -43,6 +43,13 @@ You will be prompted for a field name:
 * `i` or `in` : `integer`
 * `vcNNN` or `vcNNNn` : `varchar(NNN)` (valid lengths: 1, 2, 3, 5, 10, 20, 30, 50, 100, 200)
 
+### Function Commands
+Perform multi-step actions.  
+
+* `fk` : Create foreign key on child.  Prompts for primary table name and child field name.
+* `idx` : Create single or multi-column index on current table.  Prompts for field name(s).
+* `uidx` : Create single or multi-column **unique** index on current table.  Prompts for field name(s).
+
 ## Important Requirement
 **Your DbSchema diagram must be set to MySql as the target database.**  This was chosen to standardize on a single "starting point" for all diagrams.  However, **you may change database platforms once your diagram is complete**.
 
