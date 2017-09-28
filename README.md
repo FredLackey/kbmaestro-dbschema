@@ -15,6 +15,34 @@ There isn't an actual "command line" in DbSchema, so the macros use the descritp
 
 ![DbSchema Commands](https://github.com/FredLackey/kbmaestro-dbschema/raw/master/docs/img/kbmaestro_commands.png)
 
+## Command Syntax
+Each command is split up in 1-3 parts.  For example, to create a field with a specific data type and length, the command is:
+
+    <DATA TYPE ABBREVIATION><LENGTH><NULLABLE>
+
+So, a `varchar(255)` would be one of the following:
+
+    vc255
+    vc255n  (for nullable)
+
+## Available Commands
+
+### Simple Field Types  
+You will be prompted for a field name unless otherwise specified:  
+
+* `idNNN` : `char(NNN) PRIMARY KEY` (name of field is `id`, valid lengths: 1, 2, 3, 32)
+* `pidNNN` or `pidNNNn` : `char(NNN)` (valid lengths: 1, 2, 3, 32)
+
+### Primative Field Types  
+You will be prompted for a field name:  
+
+* `b` or `bn` : `boolean`
+* `cNNN` or `cNNNn` : `char(NNN)` (valid lengths: 1, 2, 3, 5, 10, 20, 30, 50, 100, 200)
+* `d` or `dn` : `datetime`
+* `f` or `fn` : `float`
+* `i` or `in` : `integer`
+* `vcNNN` or `vcNNNn` : `varchar(NNN)` (valid lengths: 1, 2, 3, 5, 10, 20, 30, 50, 100, 200)
+
 ## Important Requirement
 **Your DbSchema diagram must be set to MySql as the target database.**  This was chosen to standardize on a single "starting point" for all diagrams.  However, **you may change database platforms once your diagram is complete**.
 
