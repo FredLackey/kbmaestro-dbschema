@@ -4,8 +4,8 @@ Keyboard Maestro macro library for use with DbSchema.  Allows for rapid creation
 ## Dependencies  
 You must have both of the following tools installed to make use of this project:
 
-[Keyboard Maestro](https://www.keyboardmaestro.com)  
-[DbSchema](https://www.dbschema.com/)  
+[Keyboard Maestro](https://www.keyboardmaestro.com) Macro Engine for macOS / OS X  
+[DbSchema](https://www.dbschema.com/) Cross-Platform Diagram Designer and Query Tool   
 
 ## Installation
 Once Keyboard Maestro is installed, simply browse to the library file and double-click it.  The library file is located in...  
