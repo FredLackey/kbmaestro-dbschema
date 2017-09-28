@@ -18,12 +18,11 @@ There isn't an actual "command line" in DbSchema, so the macros use the descritp
 ## Command Syntax
 Each command is split up in 1-3 parts.  For example, to create a field with a specific data type and length, the command is:
 
-    <DATA TYPE ABBREVIATION><LENGTH><NULLABLE>
+`<DATA TYPE ABBREVIATION><LENGTH><NULLABLE FLAG><SPACE>`
 
-So, a `varchar(255)` would be one of the following:
+So, to create a `varchar(255)` you would type either `vc255` or `vc255n` (for nullable)
 
-    vc255
-    vc255n  (for nullable)
+***Remember, a single space must follow your command to show it is complete.***
 
 ## Available Commands
 
