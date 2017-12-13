@@ -7,6 +7,9 @@ You must have both of the following tools installed to make use of this project:
 [Keyboard Maestro](https://www.keyboardmaestro.com) Macro Engine for macOS / OS X  
 [DbSchema](https://www.dbschema.com/) Cross-Platform Diagram Designer and Query Tool   
 
+## Why DbSchema?  
+I've developed software professionally now for over three decades and, during that time, I have grown to value tools which are both reliable and platform independent.  DbSchema is both.  Since I work with a large number of global clients, I cannot predict what OS or database I will be using tomorrow.  DbSchema has worked flawlessly on all three platforms (Windows, Mac, and Linux) as well as every single database I have thrown at it (MySql, Postgres, SQL Server, MariaDb, etc.).  Additionally, unlike crap-ware, like Toad and MySql Workbench, DbSchema offers a polished and virtually flawless experience every time.
+
 ## Postgres vs MySql  
 As of the last release, Postgres is my relational database of choice.  The Postgres library is newly created and will be the focus of these macros moving forward.  It is recommended that you focus on Postgres to ensure your library is as accurate and current as possible.
 
