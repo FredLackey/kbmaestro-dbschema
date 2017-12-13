@@ -1,5 +1,5 @@
 # kbmaestro-dbschema
-Keyboard Maestro macro library for use with DbSchema.  Allows for rapid creation of DB ERP diagrams.
+Macro library for the rapid creation of database entity relationship diagram (ERD) within DbSchema.
 
 ## Dependencies  
 You must have both of the following tools installed to make use of this project:
@@ -7,10 +7,14 @@ You must have both of the following tools installed to make use of this project:
 [Keyboard Maestro](https://www.keyboardmaestro.com) Macro Engine for macOS / OS X  
 [DbSchema](https://www.dbschema.com/) Cross-Platform Diagram Designer and Query Tool   
 
-## Installation
-Once Keyboard Maestro is installed, simply browse to the library file and double-click it.  The library file is located in...  
+## Postgres vs MySql  
+As of the last release, Postgres is my relational database of choice.  The Postgres library is newly created and will be the focus of these macros moving forward.  It is recommended that you focus on Postgres to ensure your library is as accurate and current as possible.
 
-[./files/DbSchema Tables.kmlibrary](https://raw.githubusercontent.com/FredLackey/kbmaestro-dbschema/master/files/DbSchema%20Tables.kmlibrary)
+## Installation
+Once Keyboard Maestro is installed, simply browse to the library file and double-click the library you wish to use.  The library files are located in...  
+
+[./files/DbSchema - MySql Macros.kmlibrary](https://raw.githubusercontent.com/FredLackey/kbmaestro-dbschema/master/files/DbSchema%20-%20MySql%20Macros.kmlibrary)  (for MySql)  
+[./files/DbSchema - MySql Macros.kmlibrary](https://raw.githubusercontent.com/FredLackey/kbmaestro-dbschema/master/files/DbSchema%20-%20Postgres%20Macros.kmlibrary)  (for Postgres)
 
 ## Usage
 This library allows for rapidly creating new tables, indexes, and foreign keys within a single DbSchema layout.  Currently, there are **over 100 commands** for rapidly creating columns, indexes, and foreign keys in your tables:  
@@ -52,25 +56,29 @@ You will be prompted for a field name:
 Perform multi-step actions.  
 
 * `fk` : Create foreign key on current table.  Prompts for local field name and primary table name.
+* `ffk` : Same as above, however prompts for schema name of primary table.
 * `idx` : Create single or multi-column index on current table.  Prompts for field name(s).
 * `uidx` : Create single or multi-column **unique** index on current table.  Prompts for field name(s).
 
 ### Audit Trail
 
-* `_d` : Create `datetime null` field as delete flag.
-* `_m` : Create `char(32) not null` field as member id.
-* `_v` : Create `datetime not null` field as version date.
-* `_audit` : Triggers all three audit trail macros for convenience.
+* `_d` : Create `datetime null` field as delete flag.  
+* `_m` : Create `char(32) not null` field as member id (MySql only).  
+* `_u` : Create `bigint not null` field as user id (Postgres only).  
+* `_v` : Create `datetime not null` field as version date.  
+* `_audit` : Triggers all three audit trail macros for convenience.  
 
 ### Convenience
 
-* `desc` : `varchar(255) NULL` named `description`
+* `desc` : `varchar(255) NULL` named `desc`
+* `description` : `varchar(255) NULL` named `description` (prevents keyword conflicts)
 * `ename` : `varchar(50) NOT NULL` named `enum_name`
 * `name` : `varchar(50) NOT NULL` named `name`
+* `lname` : `varchar(100) NOT NULL` named `name`
 * `tid` : `char(2) NOT NULL` named `type_id`
 
 ## Important Requirement
-**Your DbSchema diagram must be set to MySql as the target database.**  This was chosen to standardize on a single "starting point" for all diagrams.  However, **you may change database platforms once your diagram is complete**.
+**Depending on the library used, your DbSchema diagram must be set to MySql or Postgres as the target database.**  This was chosen to standardize on a single "starting point" for all diagrams.  However, **you may change database platforms once your diagram is complete**.
 
 #### Why MySql?  
 DbSchema allows for easily switching from one database to another.  For example, if your project is designed in Database X (SQL Server, for example), you may easily switch it to Database Y (Postgres, MySql, MariaDb, etc.) by simply clicking your mouse.  DbSchema gracefully translates all of the datatypes, fields, and other assets.  MySql was chosen since it is widely used on all major operating systems.
